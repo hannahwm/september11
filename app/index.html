@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Gulp Template</title>
+<link rel="stylesheet" href="css/styles.min.css">
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.1/ScrollMagic.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <div class="background">
+      <div id="background-audio-player">
+      </div>
+      <button class="audio-button">
+      </button>
+      <video class="background-video" loop autoplay>
+        <source id="video-source" src="/interactive/2021/09/september11/video/flag-waving.mp4" type="video/mp4" />
+      </video>
+    </div>
+    
+    <div class="scroll-info">
+      Scroll down to continue
+    </div>
+    
+    <div id="section1" class="pinned-content first" data-video="flag-waving.mp4" data-bg-audio="looping-lofi-ambience.wav">
+      <h1>Title</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquet quam eget pharetra auctor. Nullam eleifend condimentum varius. Aliquam non egestas tortor. Nam laoreet, erat eu scelerisque tempus, massa metus fringilla turpis, nec dictum purus est a arcu. Aliquam malesuada vestibulum aliquam. Nam scelerisque ante id pretium facilisis. Nulla quis commodo nulla. Nulla et porttitor orci. Cras nisl neque, interdum eget eleifend semper, pharetra quis nisl. Fusce lectus libero, feugiat in placerat sit amet, porta ut nisi. Integer suscipit nulla a gravida hendrerit. Phasellus eu euismod magna.</p>
+    </div>
+
+    <div id="section2" class="pinned-content second" data-photo="091119_RW_campusfeature1400.jpeg">
+      <video class="foreground-video" controls poster="/interactive/2021/09/september11/images/sample-5s.jpg">
+        <source src="/interactive/2021/09/september11/video/sample-5s.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div id="section3" class="pinned-content third" data-video="nahant-monitoring.mp4" data-bg-audio="forest_ambience.wav">
+      <p>Nullam vel ipsum lectus. Integer eget sodales dui. Curabitur sagittis vulputate mi. Maecenas congue porta massa, sit amet consectetur velit rhoncus a. Pellentesque arcu orci, porta nec auctor in, porttitor at justo. Sed rhoncus viverra porta. Maecenas consectetur tincidunt tincidunt. Proin rhoncus orci ac convallis cursus. Aenean mattis, augue eu sollicitudin fermentum, ante arcu varius justo, a efficitur sem diam ac felis.</p>
+
+      <p>Sed venenatis sem eros, id commodo libero tempor a. Nullam feugiat est ut velit aliquet, quis volutpat nibh suscipit. Vestibulum cursus aliquam odio vitae molestie. Mauris tincidunt volutpat semper. Mauris mollis molestie nunc, ac varius arcu pellentesque sit amet. Vestibulum lacinia sapien ut viverra convallis. Duis sit amet nulla non magna viverra cursus nec sit amet magna. Curabitur hendrerit massa id luctus tempor. Cras dignissim, erat in scelerisque venenatis, quam erat suscipit neque, congue lacinia urna dui eget lorem. Morbi sollicitudin, elit quis suscipit venenatis, odio orci gravida diam, in gravida sapien erat consectetur risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In dictum arcu in felis sodales aliquam. Etiam eleifend aliquet risus, et pellentesque diam condimentum id. Ut sed lorem vel elit luctus malesuada nec sed ex. Maecenas sit amet lectus suscipit, lacinia massa ut, consectetur sapien.</p>
+    </div>
+    
+    <div id="section4" class="pinned-content fourth" data-photo="091119_RW_campusfeature1400.jpeg" data-fg-audio="111_more-walking.wav">
+      <div id="foreground-audio-player">
+        <canvas id="canvas"></canvas>
+        <audio id="foreground-audio" controls></audio> 
+      </div>
+    </div>
+
+  </div>
+
+  <!--build:js js/main.min.js -->
+  <script src="js/plugins/september11.js"></script>
+  <!--endbuild-->
+
+</body>
+
+</html>
